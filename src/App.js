@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-// import Counter from "./components/Counter";
+import Counter from "./components/Counter";
 // import Dropdown from "./components/Dropdown";
 import ColorPicker from "./components/ColorPicker";
 import TodoList from "./components/TodoList";
@@ -8,6 +8,8 @@ import initialTodos from "./todos.json";
 import Form from "./components/Form";
 import TodoEditor from "./components/TodoEditor";
 import Filter from "./components/Filter";
+import Clock from "components/Clock";
+import Friends from "components/Friends/Friends";
 import shortid from "shortid";
 
 const ColorPickerOptons = [
@@ -121,25 +123,27 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Form onSubmitProp={this.formSubmitHandler} />
+      {/* <Clock/> */}
+        {/* <Form onSubmitProp={this.formSubmitHandler} /> */}
         {/* <h1>Состояние компонента</h1> */}
         {/* <Counter initialValue={0} /> */}
-        <ColorPicker options={ColorPickerOptons} />
+        {/* <ColorPicker options={ColorPickerOptons} /> */}
         {/* <Dropdown /> */}
-        <TodoEditor onSubmitProp={this.addTodo} />
+        {/* <TodoEditor onSubmitProp={this.addTodo} /> */}
 
-        <Filter value={filter} onChange={this.changeFilter} />
+        {/* <Filter value={filter} onChange={this.changeFilter} /> */}
 
-        <div>
+        {/* <div>
           <p>Общее количество задач: {totalTodoCount}</p>
           <p>Количество выполненных: {completedTodoCount}</p>
-        </div>
-        <TodoList
+        </div> */}
+        {/* <TodoList
           // todos={todos}
           todos={visibleTodos}
           onDeleteTodo={this.deleteTodo}
           onToggleCompleted={this.toggleCompleted}
-        />
+        /> */}
+        <Friends />
       </div>
     );
   }

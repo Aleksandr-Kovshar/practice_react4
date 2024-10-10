@@ -1,7 +1,7 @@
 {
-  "name": "practice_react2",
+  "name": "practice_react4",
   "version": "0.1.0",
-  "homepage": "https://Aleksandr-Kovshar.github.io/practice_react2",
+  "homepage": "https://Aleksandr-Kovshar.github.io/practice_react4",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
